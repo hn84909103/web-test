@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>test test</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="nav" id="myNav">
+      <div class="navC logo">
+        <a href="index.html">Allison Yang</a>
+      </div>
+      <div class="navC menu" id="myMenu">
+        <ul id="myUl">
+          <li id="close">
+            <button onclick="changeClassBack()">✖</button>
+          <!--<button onclick="window.location.href='index.html';">✖</button>-->
+          </li>
+          <li>
+            <a href="index.html" id="here">WORK</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="" id="collapse">
+        <button onclick="changeClass()">☰</button>
+      </div>
+    </div>
+    <div class="container" id="myContainer">
+      <div class="">
+        <h2 id="testH">Hi! My name is Allison.</h2>
+
+      </div>
+      <div class="content">
+        <a class="conP" onclick="popupOpen(1)">
+          <div class="pImg" id="coverImg1">
+          </div>
+          <div class="pDes">
+            <h5>Kiosk UI & Tri-fold Design</h5>
+            <p>Photoshop / Illustrator / InDesign</p>
+          </div>
+        </a>
+        <div class="conP" onclick="popupOpen(2)">
+          <div class="pImg" id="coverImg2">
+          </div>
+          <div class="pDes">
+            <h5>Graphic Design Projects - AFC</h5>
+            <p>Photoshop / Illustrator / InDesign</p>
+          </div>
+        </div>
+        <div class="conP" onclick="popupOpen(3)">
+          <div class="pImg" id="coverImg3">
+          </div>
+          <div class="pDes">
+            <h5>Video/Animation Projects</h5>
+            <p>After Effects / Premiere</p>
+          </div>
+        </div>
+        <div class="conP" onclick="popupOpen(4)">
+          <div class="pImg" id="coverImg4">
+          </div>
+          <div class="pDes">
+            <h5>App Interface Design</h5>
+            <p>Illustrator / Figma</p>
+          </div>
+        </div>
+        <div class="conP" onclick="popupOpen(5)">
+          <div class="pImg" id="coverImg5">
+          </div>
+          <div class="pDes">
+            <h5>Park App</h5>
+            des
+          </div>
+        </div>
+        <div class="conP" onclick="popupOpen(6)">
+          <div class="pImg" id="coverImg6">
+          </div>
+          <div class="pDes">
+            <h5>3D Rendering Projects</h5>
+            des
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="close" onclick="popupClose()">&times;</a>
+          <div class="modal-title">
+            <h2 id="modalTitle"></h2>
+            <span id="modalDes"></span>
+          </div>
+        </div>
+        <div class="modal-body" id="pContent">
+
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="">
+        <small>Made with ⚡</small>
+        <small>Developed & Designed by Allison Yang</small>
+        <small>&copy; Copyright <script>document.write(new Date().getFullYear())</script></small>
+      </div>
+    </footer>
+    <script type="text/javascript" src="action.js"></script>
+  </body>
+</html>
